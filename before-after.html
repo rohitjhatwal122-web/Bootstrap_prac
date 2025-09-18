@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p {
+      color: red;
+      font-size: 18px;
+      position: relative;
+    }
+
+    /* 2nd paragraph green */
+    p:nth-child(2) {
+      color: green;
+    }
+
+    /* ::before - add text before every <p> */
+    p::before {
+      content: "👉 "; /* adds an arrow before */
+      color: blue;
+      font-weight: bold;
+    }
+
+    /* ::after - add text after every <p> */
+    p::after {
+      content: " ✔"; /* adds a check mark after */
+      color: darkorange;
+      font-weight: bold;
+    }
+
+    button {
+      background-color: orangered;
+      color: whitesmoke;
+      width: 100px;
+      height: 40px;
+      border: none;
+      cursor: pointer;
+      position: relative;
+    }
+
+    button:hover {
+      background-color: black;
+      color: gray;
+      border-radius: 10px;
+    }
+
+    /* Before & After on Button */
+    button::before {
+      content: "⚡ ";
+      position: absolute;
+      left: -25px; /* move before text left */
+    }
+
+    button::after {
+      content: " 🚀";
+      position: absolute;
+      right: -25px; /* move after text right */
+    }
+  </style>
+</head>
+<body>
+  <p>Rohit</p>
+  <p>Rohan</p>
+  <p>Ravi</p>
+
+  <button>Submit</button>
+</body>
+</html>
