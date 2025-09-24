@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        font-size: 30px;
+        font-weight: 600;
+        font-style: normal;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+
+    p:nth-child(1) {
+        color: red;
+
+    }
+
+    button {
+        color: whitesmoke;
+        background-color: blue;
+        font-weight: 300;
+        border-radius: 6px;
+    }
+
+    button:hover {
+        background-color: white;
+        color: black;
+        font-size: x-large;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    p::after {
+        content: "👉";
+        font-weight: 500;
+        color: blue;
+    }
+
+    p::before {
+        content: "✔";
+        font-weight: 300;
+        color: blue;
+    }
+    button::after{
+        content: " 🚀";
+        position: absolute;
+        margin-left: 10px;
+    }
+</style>
+
+<body>
+    <p>this is rohit</p>
+    <p>this is mohit</p>
+    <p>this is a book</p>
+
+    <button>click me!</button>
+</body>
+
+</html>
