@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        height: 200px;
+        width: 200px;
+        border: 2px solid red;
+        background-color: gainsboro;
+        text-align: center;
+        
+    
+
+    }
+    p:nth-child(1){
+        background-color: red;
+        background-image: linear-gradient(to bottom right,skyblue, rgb(215, 104, 94),yellow);
+        border-radius: 30px;
+        position: relative;
+        left: 220px;
+        top: 10px; 
+        border: 2px solid blue;
+
+    }
+    p:nth-child(2){
+        background-image: linear-gradient(yellow,pink,darkgreen);
+        border-radius: 30px;
+        position: absolute;
+        left: 450px;
+        bottom: 350px;
+    }
+
+    p:nth-child(3){
+         background-color:magenta;
+         background-image: linear-gradient(to bottom left, magenta,skyblue,pink,yellow,green);
+         position: sticky;
+         left: 200px;
+         border-radius: 32px;
+
+    }
+     p:nth-child(4){
+        background-color: chartreuse;
+        background-image: radial-gradient(circle, red, blue,green , pink, yellow,skyblue);
+        position: fixed;
+        border-radius: 30px;
+        bottom: 350px;
+     }
+     p:nth-child(5){
+        background-color: deeppink;
+        background-image: conic-gradient(red,skyblue,pink);
+        position: relative;
+        left: 450px;
+        border-radius: 30px;
+        bottom: 200px;
+     }
+     p:nth-child(6){
+        background-color: limegreen;
+        background-image: conic-gradient(limegreen,red,blue);
+        border-radius: 50px;
+        position: fixed;
+        left: 700px;
+        bottom: 350px;
+        border-radius: 30px;
+        
+     }
+
+</style>
+
+<body>
+    <div class="main">
+        <p>rohit</p>
+        <p>mohit</p>
+        <p>rajesh</p>
+        <p>kapil</p>
+        <p>vishal</p>
+        <p>vijay</p>
+       
+
+    </div>
+</body>
+
+</html>

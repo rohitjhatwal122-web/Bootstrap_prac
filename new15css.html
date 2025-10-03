@@ -1,0 +1,146 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css level 1</title>
+</head>
+<style>
+    h1 {
+        color: red;
+    }
+
+    #one {
+        color: blue;
+        font-size: large;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 500;
+    }
+
+    #two {
+        color: goldenrod;
+        font-weight: 900;
+    }
+
+    #three {
+        color: magenta;
+        font-style: initial;
+        font-weight: bolder;
+    }
+
+    #four {
+        text-align: start;
+    }
+
+    #five {
+        text-align: end;
+    }
+
+    #six {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    #seven {
+        color: maroon;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #eight {
+        text-decoration: underline;
+        color: black;
+        font-size: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bolder;
+    }
+
+    #nine {
+        color: rgb(70, 200, 100);
+
+    }
+
+    body {
+        background-color: skyblue;
+    }
+</style>
+
+<body>
+    <h1> hello world</h1>
+    <h2 style="color: green;"> hello world</h2>
+    <p id="one">welcome to my world</p>
+    <p id="two">welcome to my world</p>
+    <p id="three">welcome to my world</p>
+    <p id="four">welcome to my world</p>
+    <p id="five">welcome to my world</p>
+    <p id="six">welcome to my world</p>
+    <p id="seven">welcome to my world</p>
+    <p id="eight">welcome to my world</p>
+    <p id="nine">welcome to my world</p>
+
+</body>
+
+
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Boxes</title>
+    <style>
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 20px;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            display: flex;
+            flex-direction: column; /* content ऊपर से नीचे */
+            align-items: center;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .box h3{
+            margin: 5px 0;
+        }
+
+        .box p{
+            font-size: 14px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+ <div class="main">
+
+   <div class="box">
+      <h3>Rohit</h3>   <!-- ऊपर Name -->
+      <p>Class: 12th</p>   <!-- नीचे detail -->
+      <p>Roll No: 101</p>  <!-- और detail -->
+   </div>
+
+   <div class="box">
+      <h3>Mohit</h3>
+      <p>Class: 10th</p>
+      <p>Roll No: 102</p>
+   </div>
+
+   <div class="box">
+      <h3>Karan</h3>
+      <p>Class: 11th</p>
+      <p>Roll No: 103</p>
+   </div>
+
+ </div>
+</body>
+</html>
+

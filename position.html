@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        height: 200px;
+        width: 200px;
+        border: 2px solid red;
+        background-color: gray;
+        text-align: center;
+    }
+
+    /* /* nth-child() CSS Pseudo-class hai  */
+
+    p:nth-child(4) {
+        position: relative;
+        left: 100px;
+        background-color: red;
+    }
+
+    p:nth-child(2) {
+        position: absolute;
+         /* left: 100px; // it doesn't work with static   */
+        background-color: blue;
+        margin-left: 100px;
+        margin-top: 40px;
+        margin-top: 100px; 
+    }
+
+    p:nth-child(3) {
+        background-color: green;
+        position: sticky;
+        margin-left: 200px;
+    }
+
+      p:nth-child(1) {
+        background-color: yellowgreen;
+        position: fixed;
+         /* margin-left: 300px;  */
+    }
+</style>
+
+<body>
+    <div class="main">
+        <p>first </p>
+        <p>second</p>
+        <p>third</p>
+        <p>fourth</p>
+        <p>fifth</p>
+
+    </div>
+</body>
+
+</html>
